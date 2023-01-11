@@ -2,49 +2,52 @@ create schema furama;
 use furama;
 
 -- vị trí
-create table vi_tri(
-	ma_vi_tri int,
-    ten_vi_tri varchar(45),
-    primary key(ma_vi_tri)
-);
+CREATE TABLE vi_tri (
+    ma_vi_tri INT,
+    ten_vi_tri VARCHAR(45),
+    PRIMARY KEY (ma_vi_tri)
+)
 
 insert into vi_tri (ma_vi_tri, ten_vi_tri) values (1, 'Quản lý'), (2, 'Nhân viên');
 
 -- trình độ
-create table trinh_do(
-	ma_trinh_do int,
-    ten_trinh_do varchar(45),
-    primary key (ma_trinh_do)
+CREATE TABLE trinh_do (
+    ma_trinh_do INT,
+    ten_trinh_do VARCHAR(45),
+    PRIMARY KEY (ma_trinh_do)
 );
 
 insert into trinh_do (ma_trinh_do, ten_trinh_do) values (1, 'Trung cấp'),(2, 'Cao đẳng'),(3, 'Đại học'),(4, 'Sau đại học');
 
 -- bộ phận
-create table bo_phan(
-	ma_bo_phan int,
-    ten_bo_phan varchar(45),
-    primary key(ma_bo_phan)
+CREATE TABLE bo_phan (
+    ma_bo_phan INT,
+    ten_bo_phan VARCHAR(45),
+    PRIMARY KEY (ma_bo_phan)
 );
 
 insert into bo_phan (ma_bo_phan, ten_bo_phan) values (1, 'Sale_Marketing'),(2, 'Hành chính'),(3, 'Phục vụ'),(4, 'Quản lí');
 
 -- nhân viên
-create table nhan_vien(
-	ma_nhan_vien int,
-    ho_ten varchar(45) not null,
-    ngay_sinh date not null,
-    so_cmnd varchar(45) not null,
-    luong double not null,
-    so_dien_thoai varchar(45) not null,
-    email varchar(45),
-    dia_chi varchar(45),
-    ma_vi_tri int not null,
-    ma_trinh_do int not null,
-    ma_bo_phan int not null,
-    primary key(ma_nhan_vien),
-    foreign key (ma_vi_tri) references vi_tri(ma_vi_tri),
-    foreign key (ma_trinh_do) references trinh_do(ma_trinh_do),
-    foreign key (ma_bo_phan) references bo_phan(ma_bo_phan)
+CREATE TABLE nhan_vien (
+    ma_nhan_vien INT,
+    ho_ten VARCHAR(45) NOT NULL,
+    ngay_sinh DATE NOT NULL,
+    so_cmnd VARCHAR(45) NOT NULL,
+    luong DOUBLE NOT NULL,
+    so_dien_thoai VARCHAR(45) NOT NULL,
+    email VARCHAR(45),
+    dia_chi VARCHAR(45),
+    ma_vi_tso_dien_thoairi INT NOT NULL,
+    ma_trinh_do INT NOT NULL,
+    ma_bo_phan INT NOT NULL,
+    PRIMARY KEY (ma_nhan_vien),
+    FOREIGN KEY (ma_vi_tri)
+        REFERENCES vi_tri (ma_vi_tri),
+    FOREIGN KEY (ma_trinh_do)
+        REFERENCES trinh_do (ma_trinh_do),
+    FOREIGN KEY (ma_bo_phan)
+        REFERENCES bo_phan (ma_bo_phan)
 );
 
 insert into nhan_vien(ma_nhan_vien, ho_ten, ngay_sinh, so_cmnd, luong, so_dien_thoai, email, dia_chi, ma_vi_tri, ma_trinh_do, ma_bo_phan) values 
@@ -60,27 +63,28 @@ insert into nhan_vien(ma_nhan_vien, ho_ten, ngay_sinh, so_cmnd, luong, so_dien_t
 (10, 'Nguyễn Công Đạo', '1994-01-08', '755434343', 8000000, '0988767111', 'nguyencongdao12@gmail.com', '6 Hoà Khánh, Đồng Nai', 2,3,2);
 
 -- loại khách
-create table loai_khach(
-	ma_loai_khach int,
-    ten_loai_khach varchar(45),
-    primary key(ma_loai_khach)
+CREATE TABLE loai_khach (
+    ma_loai_khach INT,
+    ten_loai_khach VARCHAR(45),
+    PRIMARY KEY (ma_loai_khach)
 );
 
 insert into loai_khach(ma_loai_khach, ten_loai_khach) values (1, 'Diamond'), (2, 'Platinium'), (3, 'Gold'), (4, 'Silver'), (5, 'Member');
 
 -- khách hàng
-create table khach_hang(
-	ma_khach_hang int,
-    ma_loai_khach int not null,
-    ho_ten varchar(45) not null,
-    ngay_sinh date not null,
-    gioi_tinh bit(1) not null,
-    so_cmnd varchar(45) not null,
-    so_dien_thoai varchar(45) not null,
-    email varchar(45),
-    dia_chi varchar(45),
-    primary key(ma_khach_hang),
-    foreign key (ma_loai_khach) references loai_khach(ma_loai_khach)
+CREATE TABLE khach_hang (
+    ma_khach_hang INT,
+    ma_loai_khach INT NOT NULL,
+    ho_ten VARCHAR(45) NOT NULL,
+    ngay_sinh DATE NOT NULL,
+    gioi_tinh BIT(1) NOT NULL,
+    so_cmnd VARCHAR(45) NOT NULL,
+    so_dien_thoai VARCHAR(45) NOT NULL,
+    email VARCHAR(45),
+    dia_chi VARCHAR(45),
+    PRIMARY KEY (ma_khach_hang),
+    FOREIGN KEY (ma_loai_khach)
+        REFERENCES loai_khach (ma_loai_khach)
 );
 
 insert into khach_hang(ma_khach_hang, ho_ten, ngay_sinh, gioi_tinh, so_cmnd, so_dien_thoai, email, dia_chi, ma_loai_khach) values 
@@ -96,40 +100,42 @@ insert into khach_hang(ma_khach_hang, ho_ten, ngay_sinh, gioi_tinh, so_cmnd, so_
 (10, 'Nguyễn Tâm Đắc', '1989-07-01', 1, '344343432', '0987654321', 'dactam@gmail.com', '22 Ngô Quyền, Đà Nẵng',2);
 
 -- loại dịch vụ
-create table loai_dich_vu(
-	ma_loai_dich_vu int,
-    ten_loai_dich_vu varchar(45),
-    primary key(ma_loai_dich_vu)
+CREATE TABLE loai_dich_vu (
+    ma_loai_dich_vu INT,
+    ten_loai_dich_vu VARCHAR(45),
+    PRIMARY KEY (ma_loai_dich_vu)
 );
 
 insert into loai_dich_vu(ma_loai_dich_vu, ten_loai_dich_vu) values (1, 'Villa'), (2, 'House'), (3, 'Room');
 
 -- kiểu thuê
-create table kieu_thue(
-	ma_kieu_thue int,
-    ten_kieu_thue varchar(45),
-    primary key(ma_kieu_thue)
+CREATE TABLE kieu_thue (
+    ma_kieu_thue INT,
+    ten_kieu_thue VARCHAR(45),
+    PRIMARY KEY (ma_kieu_thue)
 );
 
 insert into kieu_thue(ma_kieu_thue, ten_kieu_thue) values (1, 'year'), (2, 'month'), (3, 'day'), (4, 'hour');
 
 -- dịch vụ
-create table dich_vu(
-	ma_dich_vu int,
-    ten_dich_vu varchar(45) not null,
-    dien_tich int,
-    chi_phi_thue varchar(45) not null,
-    so_nguoi_toi_da int,
-    ma_kieu_thue int not null,
-    ma_loai_dich_vu int not null,
-    tieu_chuan_phong varchar(45),
-    mo_ta_tien_nghi_khac varchar(45),
-    dien_tich_ho_boi double,
-    so_tang int,
-    dich_vu_di_kem text,
-    primary key(ma_dich_vu),
-    foreign key (ma_kieu_thue) references kieu_thue(ma_kieu_thue),
-    foreign key (ma_loai_dich_vu) references loai_dich_vu(ma_loai_dich_vu)
+CREATE TABLE dich_vu (
+    ma_dich_vu INT,
+    ten_dich_vu VARCHAR(45) NOT NULL,
+    dien_tich INT,
+    chi_phi_thue VARCHAR(45) NOT NULL,
+    so_nguoi_toi_da INT,
+    ma_kieu_thue INT NOT NULL,
+    ma_loai_dich_vu INT NOT NULL,
+    tieu_chuan_phong VARCHAR(45),
+    mo_ta_tien_nghi_khac VARCHAR(45),
+    dien_tich_ho_boi DOUBLE,
+    so_tang INT,
+    dich_vu_di_kem TEXT,
+    PRIMARY KEY (ma_dich_vu),
+    FOREIGN KEY (ma_kieu_thue)
+        REFERENCES kieu_thue (ma_kieu_thue),
+    FOREIGN KEY (ma_loai_dich_vu)
+        REFERENCES loai_dich_vu (ma_loai_dich_vu)
 );
 
 insert into dich_vu(ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, so_nguoi_toi_da, tieu_chuan_phong, mo_ta_tien_nghi_khac, dien_tich_ho_boi, so_tang, dich_vu_di_kem, ma_kieu_thue, ma_loai_dich_vu) values 
@@ -141,13 +147,13 @@ insert into dich_vu(ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, so_nguoi_t
 (6, 'Room Twin 02', 3000, '900000', 2, 'normal', 'Có tivi',null, null, '1 Xe máy', 4,3);
 
 -- dịch vụ đi kèm
-create table dich_vu_di_kem(
-	ma_dich_vu_di_kem int,
-    ten_dich_vu_di_kem varchar(45) not null,
-    gia double not null,
-    don_vi varchar(10) not null,
-    trang_thai varchar(45),
-    primary key(ma_dich_vu_di_kem)
+CREATE TABLE dich_vu_di_kem (
+    ma_dich_vu_di_kem INT,
+    ten_dich_vu_di_kem VARCHAR(45) NOT NULL,
+    gia DOUBLE NOT NULL,
+    don_vi VARCHAR(10) NOT NULL,
+    trang_thai VARCHAR(45),
+    PRIMARY KEY (ma_dich_vu_di_kem)
 );
 
 insert into dich_vu_di_kem(ma_dich_vu_di_kem, ten_dich_vu_di_kem, gia, don_vi, trang_thai) values 
@@ -159,18 +165,21 @@ insert into dich_vu_di_kem(ma_dich_vu_di_kem, ten_dich_vu_di_kem, gia, don_vi, t
 (6, 'Buffet buổi tối', 16000, 'suất', 'đầy đủ đồ ăn, tráng miệng');
 
 -- hợp đồng
-create table hop_dong(
-	ma_hop_dong int,
-    ngay_lam_hop_dong datetime not null,
-    ngay_ket_thuc datetime not null,
-    tien_dat_coc double not null,
-    ma_nhan_vien int not null,
-    ma_khach_hang int not null,
-    ma_dich_vu int not null,
-    primary key(ma_hop_dong),
-    foreign key (ma_nhan_vien) references nhan_vien(ma_nhan_vien),
-    foreign key (ma_khach_hang) references khach_hang(ma_khach_hang),
-    foreign key (ma_dich_vu) references dich_vu(ma_dich_vu)
+CREATE TABLE hop_dong (
+    ma_hop_dong INT,
+    ngay_lam_hop_dong DATETIME NOT NULL,
+    ngay_ket_thuc DATETIME NOT NULL,
+    tien_dat_coc DOUBLE NOT NULL,
+    ma_nhan_vien INT NOT NULL,
+    ma_khach_hang INT NOT NULL,
+    ma_dich_vu INT NOT NULL,
+    PRIMARY KEY (ma_hop_dong),
+    FOREIGN KEY (ma_nhan_vien)
+        REFERENCES nhan_vien (ma_nhan_vien),
+    FOREIGN KEY (ma_khach_hang)
+        REFERENCES khach_hang (ma_khach_hang),
+    FOREIGN KEY (ma_dich_vu)
+        REFERENCES dich_vu (ma_dich_vu)
 );
 
 insert into hop_dong(ma_hop_dong, ngay_lam_hop_dong, ngay_ket_thuc, tien_dat_coc, ma_nhan_vien, ma_khach_hang, ma_dich_vu) values 
@@ -188,14 +197,16 @@ insert into hop_dong(ma_hop_dong, ngay_lam_hop_dong, ngay_ket_thuc, tien_dat_coc
 (12, '2021-05-25', '2021-05-27', 0, 7, 10, 1);
 
 -- hợp đồng chi tiết
-create table hop_dong_chi_tiet(
-	ma_hop_dong_chi_tiet int,
-    ma_hop_dong int not null,
-    ma_dich_vu_di_kem int not null,
-    so_luong int not null,
-    primary key(ma_hop_dong_chi_tiet),
-    foreign key (ma_hop_dong) references hop_dong(ma_hop_dong),
-    foreign key (ma_dich_vu_di_kem) references dich_vu_di_kem(ma_dich_vu_di_kem)
+CREATE TABLE hop_dong_chi_tiet (
+    ma_hop_dong_chi_tiet INT,
+    ma_hop_dong INT NOT NULL,
+    ma_dich_vu_di_kem INT NOT NULL,
+    so_luong INT NOT NULL,
+    PRIMARY KEY (ma_hop_dong_chi_tiet),
+    FOREIGN KEY (ma_hop_dong)
+        REFERENCES hop_dong (ma_hop_dong),
+    FOREIGN KEY (ma_dich_vu_di_kem)
+        REFERENCES dich_vu_di_kem (ma_dich_vu_di_kem)
 );
 
 insert into hop_dong_chi_tiet(ma_hop_dong_chi_tiet, so_luong, ma_hop_dong, ma_dich_vu_di_kem) values 
