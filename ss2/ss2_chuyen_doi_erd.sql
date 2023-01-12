@@ -32,6 +32,7 @@ CREATE TABLE chi_tiet_phieu_xuat (
     so_luong_suat INT,
     so_phieu_xuat INT,
     ma_vat_tu INT,
+    primary key(so_phieu_xuat, ma_vat_tu),
     FOREIGN KEY (so_phieu_xuat)
         REFERENCES phieu_xuat (so_phieu_xuat),
     FOREIGN KEY (ma_vat_tu)
