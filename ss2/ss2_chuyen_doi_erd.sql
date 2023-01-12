@@ -32,7 +32,7 @@ CREATE TABLE chi_tiet_phieu_xuat (
     so_luong_suat INT,
     so_phieu_xuat INT,
     ma_vat_tu INT,
-    primary key(so_phieu_xuat, ma_vat_tu),
+    PRIMARY KEY (so_phieu_xuat , ma_vat_tu),
     FOREIGN KEY (so_phieu_xuat)
         REFERENCES phieu_xuat (so_phieu_xuat),
     FOREIGN KEY (ma_vat_tu)
@@ -50,6 +50,7 @@ CREATE TABLE chi_tiet_phieu_nhap (
     so_luong_nhap INT,
     so_phieu_nhap INT,
     ma_vat_tu INT,
+    PRIMARY KEY (so_phieu_nhap , ma_vat_tu),
     FOREIGN KEY (so_phieu_nhap)
         REFERENCES phieu_nhap (so_phieu_nhap),
     FOREIGN KEY (ma_vat_tu)
@@ -67,6 +68,7 @@ CREATE TABLE don_dat_hang (
 CREATE TABLE chi_tiet_don_hang (
     ma_vat_tu INT,
     so_dat_hang INT,
+    PRIMARY KEY (ma_vat_tu , so_dat_hang),
     FOREIGN KEY (ma_vat_tu)
         REFERENCES vat_tu (ma_vat_tu),
     FOREIGN KEY (so_dat_hang)
