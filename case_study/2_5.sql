@@ -6,9 +6,10 @@ SELECT
 FROM
     nhan_vien
 WHERE
-    ho_ten LIKE 'T%' OR ho_ten LIKE 'H%'
-        OR ho_ten LIKE 'K%' AND LENGTH(ho_ten) < 16;
-
+	substring_index(nhan_vien.ho_ten,' ',-1) like 'H%'
+    or substring_index(nhan_vien.ho_ten,' ',-1) like 'T%'
+    or substring_index(nhan_vien.ho_ten,' ',-1) like 'K%'
+    AND LENGTH(ho_ten) < 16;
 -- task 3
 SELECT 
     *
@@ -38,3 +39,11 @@ GROUP BY khach_hang.ma_khach_hang
 ORDER BY COUNT(hop_dong.ma_khach_hang);
 
 -- task 5
+select hd.ma_khach_hang, ho_ten, ten_loai_khach, hd.ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, gia*so_luong + chi_phi_thue 'tong tien' from hop_dong hd
+join hop_dong_chi_tiet hdct on hdct.ma_hop_dong = hd.ma_hop_dong
+join khach_hang kh on hd.ma_khach_hang = kh.ma_khach_hang
+join loai_khach lk on kh.ma_loai_khach = lk.ma_loai_khach
+join dich_vu_di_kem dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
+join dich_vu dv on dv.ma_dich_vu = hd.ma_dich_vu
+group by hd.ma_hop_dong
+order by kh.ma_khach_hang;
