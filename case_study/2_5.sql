@@ -17,7 +17,7 @@ FROM
     khach_hang
 WHERE
     ROUND(DATEDIFF(CURDATE(), ngay_sinh) / 365, 0) > 17
-        AND ROUND(DATEDIFF(HOP_DONGCURDATE(), ngay_sinh) / 365,
+        AND ROUND(DATEDIFF(CURDATE(), ngay_sinh) / 365,
             0) < 50
         AND dia_chi LIKE '%Đà Nẵng'
         OR dia_chi LIKE '%Quảng Trị';
@@ -39,11 +39,27 @@ GROUP BY khach_hang.ma_khach_hang
 ORDER BY COUNT(hop_dong.ma_khach_hang);
 
 -- task 5
-select hd.ma_khach_hang, ho_ten, ten_loai_khach, hd.ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, gia*so_luong + chi_phi_thue 'tong tien' from hop_dong hd
-join hop_dong_chi_tiet hdct on hdct.ma_hop_dong = hd.ma_hop_dong
-join khach_hang kh on hd.ma_khach_hang = kh.ma_khach_hang
-join loai_khach lk on kh.ma_loai_khach = lk.ma_loai_khach
-join dich_vu_di_kem dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
-join dich_vu dv on dv.ma_dich_vu = hd.ma_dich_vu
-group by hd.ma_hop_dong
-order by kh.ma_khach_hang;
+select 
+  khach_hang.ma_khach_hang, 
+  khach_hang.ho_ten, 
+  loai_khach.ten_loai_khach, 
+  hop_dong.ma_hop_dong, 
+  dich_vu.ten_dich_vu, 
+  hop_dong.ngay_lam_hop_dong, 
+  hop_dong.ngay_ket_thuc, 
+  sum(
+    ifnull(dich_vu.chi_phi_thue, 0)+ ifnull(hop_dong_chi_tiet.so_luong, 0)* ifnull(dich_vu_di_kem.gia, 0)
+  ) 'total' 
+from 
+  khach_hang 
+  left join loai_khach on khach_hang.ma_loai_khach = loai_khach.ma_loai_khach 
+  left join hop_dong on khach_hang.ma_khach_hang = hop_dong.ma_khach_hang 
+  left join dich_vu on hop_dong.ma_dich_vu = dich_vu.ma_dich_vu 
+  left join loai_dich_vu on loai_dich_vu.ma_loai_dich_vu = dich_vu.ma_loai_dich_vu 
+  left join hop_dong_chi_tiet on hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_dong 
+  left join dich_vu_di_kem on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem 
+group by 
+  ma_hop_dong, khach_hang.ma_khach_hang 
+order by 
+  ma_khach_hang asc, 
+  ma_hop_dong desc;

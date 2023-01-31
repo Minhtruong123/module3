@@ -6,7 +6,7 @@ CREATE TABLE vi_tri (
     ma_vi_tri INT,
     ten_vi_tri VARCHAR(45),
     PRIMARY KEY (ma_vi_tri)
-)
+);
 
 insert into vi_tri (ma_vi_tri, ten_vi_tri) values (1, 'Quản lý'), (2, 'Nhân viên');
 
