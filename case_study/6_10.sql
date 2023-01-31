@@ -1,43 +1,52 @@
 use furama;
 
 -- task 6
-    select 
-  dich_vu.ma_dich_vu, 
-  dich_vu.ten_dich_vu, 
-  dich_vu.dien_tich, 
-  dich_vu.chi_phi_thue, 
-  loai_dich_vu.ten_loai_dich_vu, 
-  hop_dong.ngay_lam_hop_dong 
-from 
-  dich_vu 
-  join loai_dich_vu on loai_dich_vu.ma_loai_dich_vu = dich_vu.ma_loai_dich_vu 
-  join hop_dong on hop_dong.ma_dich_vu = dich_vu.ma_dich_vu 
-where 
-  dich_vu.ma_dich_vu not in (
-    select 
-      hop_dong.ma_dich_vu 
-    from 
-      hop_dong 
-    where 
-      (
-        (
-          month(hop_dong.ngay_lam_hop_dong) between 1 
-          and 3
-        ) 
-        and year(hop_dong.ngay_lam_hop_dong) like 2021
-      )
-  ) 
-group by 
-  dich_vu.ten_dich_vu;
+SELECT 
+    dich_vu.ma_dich_vu,
+    dich_vu.ten_dich_vu,
+    dich_vu.dien_tich,
+    dich_vu.chi_phi_thue,
+    loai_dich_vu.ten_loai_dich_vu
+FROM
+    dich_vu
+        JOIN
+    loai_dich_vu ON loai_dich_vu.ma_loai_dich_vu = dich_vu.ma_loai_dich_vu
+        JOIN
+    hop_dong ON hop_dong.ma_dich_vu = dich_vu.ma_dich_vu
+WHERE
+    dich_vu.ma_dich_vu NOT IN (SELECT 
+            hop_dong.ma_dich_vu
+        FROM
+            hop_dong
+        WHERE
+            MONTH(hop_dong.ngay_lam_hop_dong) BETWEEN 1 AND 3
+                AND YEAR(hop_dong.ngay_lam_hop_dong) LIKE 2021)
+GROUP BY dich_vu.ten_dich_vu;
 
 -- task 7
-select dv.ma_dich_vu, dv.ten_dich_vu, dv.dien_tich, dv.so_nguoi_toi_da, dv.chi_phi_thue, ldv.ten_loai_dich_vu from dich_vu dv
-join hop_dong hd on hd.ma_dich_vu= dv.ma_dich_vu
-join loai_dich_vu ldv on dv.ma_loai_dich_vu = ldv.ma_loai_dich_vu
-where
-	dv.ma_dich_vu not in (
-		select hd.ma_dich_vu from hop_dong hd
-        where (
-			year(hd.ngay_lam_hop_dong) =2020
-        )
-)
+SELECT 
+    dv.ma_dich_vu,
+    dv.ten_dich_vu,
+    dv.dien_tich,
+    dv.so_nguoi_toi_da,
+    dv.chi_phi_thue,
+    ldv.ten_loai_dich_vu
+FROM
+    dich_vu dv
+        JOIN
+    hop_dong hd ON hd.ma_dich_vu = dv.ma_dich_vu
+        JOIN
+    loai_dich_vu ldv ON dv.ma_loai_dich_vu = ldv.ma_loai_dich_vu
+WHERE
+    dv.ma_dich_vu NOT IN (SELECT 
+            hd.ma_dich_vu
+        FROM
+            hop_dong hd
+        WHERE
+            YEAR(hd.ngay_lam_hop_dong) LIKE 2021)
+GROUP BY dv.ten_dich_vu;
+
+-- task 8
+-- cach 1
+select ho_ten from khach_hang
+group by ho_ten;
