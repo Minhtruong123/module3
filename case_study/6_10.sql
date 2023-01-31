@@ -43,10 +43,50 @@ WHERE
         FROM
             hop_dong hd
         WHERE
-            YEAR(hd.ngay_lam_hop_dong) LIKE 2021)
+            YEAR(hd.ngay_lam_hop_dong) LIKE 2021
+                AND YEAR(hd.ngay_lam_hop_dong) != 2020)
 GROUP BY dv.ten_dich_vu;
 
 -- task 8
 -- cach 1
-select ho_ten from khach_hang
-group by ho_ten;
+SELECT 
+    ho_ten
+FROM
+    khach_hang
+GROUP BY ho_ten;
+-- cach 2
+SELECT DISTINCT
+    ho_ten
+FROM
+    khach_hang;
+-- cach 3
+SELECT 
+    ho_ten
+FROM
+    khach_hang 
+UNION SELECT 
+    ho_ten
+FROM
+    khach_hang;
+
+-- task 9
+SELECT 
+    MONTH(hop_dong.ngay_lam_hop_dong) AS tháng,
+    COUNT(hop_dong.ma_khach_hang)
+FROM
+    hop_dong
+GROUP BY MONTH(hop_dong.ngay_lam_hop_dong)
+ORDER BY MONTH(hop_dong.ngay_lam_hop_dong);
+
+-- task 10
+SELECT 
+    hd.ma_hop_dong,
+    hd.ngay_lam_hop_dong,
+    hd.ngay_ket_thuc,
+    hd.tien_dat_coc,
+    SUM(IFNULL(hdct.so_luong, 0)) AS so_luong_dich_vu_di_kem
+FROM
+    hop_dong hd
+        LEFT JOIN
+    hop_dong_chi_tiet hdct ON hdct.ma_hop_dong = hd.ma_hop_dong
+GROUP BY hd.ma_hop_dong
