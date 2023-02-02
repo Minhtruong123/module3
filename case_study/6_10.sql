@@ -24,6 +24,8 @@ WHERE
 GROUP BY dich_vu.ten_dich_vu;
 
 -- task 7
+-- Hiển thị thông tin ma_dich_vu, ten_dich_vu, dien_tich, so_nguoi_toi_da, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ 
+-- đã từng được khách hàng đặt phòng trong năm 2020 nhưng chưa từng được khách hàng đặt phòng trong năm 2021.
 SELECT 
     dv.ma_dich_vu,
     dv.ten_dich_vu,
@@ -71,10 +73,12 @@ FROM
 
 -- task 9
 SELECT 
-    MONTH(hop_dong.ngay_lam_hop_dong) AS tháng,
+    MONTH(hop_dong.ngay_lam_hop_dong) AS thang,
     COUNT(hop_dong.ma_khach_hang)
 FROM
     hop_dong
+WHERE
+    YEAR(hop_dong.ngay_lam_hop_dong) = 2021
 GROUP BY MONTH(hop_dong.ngay_lam_hop_dong)
 ORDER BY MONTH(hop_dong.ngay_lam_hop_dong);
 

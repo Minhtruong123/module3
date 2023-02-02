@@ -38,7 +38,7 @@ CREATE TABLE nhan_vien (
     so_dien_thoai VARCHAR(45) NOT NULL,
     email VARCHAR(45),
     dia_chi VARCHAR(45),
-    ma_vi_tso_dien_thoairi INT NOT NULL,
+    ma_vi_tri INT NOT NULL,
     ma_trinh_do INT NOT NULL,
     ma_bo_phan INT NOT NULL,
     PRIMARY KEY (ma_nhan_vien),
