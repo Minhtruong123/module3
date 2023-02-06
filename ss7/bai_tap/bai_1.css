@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, footer{
+    padding-left: 5%;
+    background-color: deeppink;
+    color: white;
+}
+
+section {
+    padding: 2%;
+    margin: 1%;
+    background-color: lightpink;
+}
+
+article {
+    padding: 1%;
+    margin: 1%;
+    background-color: pink;
+}
+
+nav ul {
+    height: 20px;
+    margin-top: 1%;
+}
+
+nav ul li{
+    display: inline;
+    padding: 1%;
+    background-color: hotpink;
+    line-height: 20px;
+}
