@@ -1,0 +1,47 @@
+body {
+    font-size: 13px;
+}
+
+.surface {
+    border-left: 2px solid black;
+}
+
+.animation-row {
+    background-color: #dcdbdb;
+}
+
+.animation {
+    height: 20px;
+    line-height: 20px;
+}
+
+.main1-part1 {
+    background-color: #e5ebf5;
+    height: 700px;
+    padding-left: 100px;
+}
+
+.title-laptopsdesigned {
+    font-size: 5.5rem;
+}
+
+.paragraph1 {
+    font-size: 26px;
+}
+
+.link-part1 {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+.gallery1 {
+    border: 1px solid black;
+    margin-top: 50px;
+    width: 95%;
+}
+
+.content-gallery {
+    font-size: 30px;
+
+}
