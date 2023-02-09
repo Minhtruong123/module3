@@ -43,5 +43,25 @@ body {
 
 .content-gallery {
     font-size: 30px;
+}
 
+.buy-now{
+    color: #0f13aa;
+}
+
+.surface-panel{
+    display: inherit;
+}
+
+.hotel, hat, device, help-choose, tag, why-surface{
+    width: 14%;
+}
+
+.link-2in1{
+    text-decoration: none;
+}
+
+.link-card{
+    text-decoration: none;
+    color: #3b3fdc;
 }
