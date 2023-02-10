@@ -138,7 +138,8 @@
         <div class="row mt-4 d-flex justify-content-center">
             <div class="col-2 text-center float-start">
                 <div>
-                    <img src="https://i.scdn.co/image/ab671c3d0000f430df61a7d75be4ed36c0857a61" width="142px" height="142px" alt="">
+                    <img src="https://i.scdn.co/image/ab671c3d0000f430df61a7d75be4ed36c0857a61" width="142px"
+                         height="142px" alt="">
                 </div>
                 <div>Download</div>
                 <div>Listen everywhere</div>
@@ -152,18 +153,21 @@
             </div>
             <div class="col-2 text-center float-start">
                 <div>
-                    <img src="https://i.scdn.co/image/ab671c3d0000f430d5f682f0043198ce409efaab" width="142px" height="142px" alt="">
+                    <img src="https://i.scdn.co/image/ab671c3d0000f430d5f682f0043198ce409efaab" width="142px"
+                         height="142px" alt="">
                 </div>
                 <div>Download</div>
                 <div>Listen everywhere</div>
             </div>
             <div class="col-2 text-center float-start">
                 <div>
-                    <img src="https://i.scdn.co/image/ab671c3d0000f430311a399af710a733778c610c" width="142px" height="142px" alt="">
+                    <img src="https://i.scdn.co/image/ab671c3d0000f430311a399af710a733778c610c" width="142px"
+                         height="142px" alt="">
                 </div>
                 <div>Play music in any order</div>
                 <div>
-                    Play any song in the order you like</div>
+                    Play any song in the order you like
+                </div>
             </div>
         </div>
     </div>
@@ -177,10 +181,11 @@
             <h2 class="py-2">Choose the package that's right for you</h2>
         </div>
         <div class="row gy-4" data-aos="zoom-in">
-            <div class="col-lg-4" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); padding-top: 12px; padding-bottom: 12px">
+            <div class="col-lg-4"
+                 style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); padding-top: 12px; padding-bottom: 12px">
                 <div class="card bg-transparent px-4">
-                    <h4 class="py-2">BASIC PACKAGE</h4>
-                    <p class="py-3">Enthusiastic customer support.</p>
+                    <h4 class="py-2 text-center">BASIC PACKAGE</h4>
+                    <p class="py-3 text-center">Enthusiastic customer support.</p>
                     <div class="block d-flex align-items-center">
                         <p class="pe-2"><i class="ti-check text-success fs-3"></i></p>
                         <p>There are many choices.</p>
@@ -205,10 +210,11 @@
                 </div>
             </div>
 
-            <div class="col-lg-4" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); padding-top: 12px; padding-bottom: 12px">
+            <div class="col-lg-4"
+                 style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); padding-top: 12px; padding-bottom: 12px">
                 <div class="card bg-transparent px-4">
-                    <h4 class="py-2">STANDARD PACKAGE</h4>
-                    <p class="py-3">Listen to all content without advertising</p>
+                    <h4 class="py-2 text-center">STANDARD PACKAGE</h4>
+                    <p class="py-3 text-center">Listen to all content without advertising</p>
                     <div class="block d-flex align-items-center">
                         <p class="pe-2"><i class="ti-check text-success fs-3"></i></p>
                         <p>sale off 50%.</p>
@@ -232,10 +238,11 @@
                 </div>
             </div>
 
-            <div class="col-lg-4" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); padding-top: 12px; padding-bottom: 12px">
+            <div class="col-lg-4"
+                 style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); padding-top: 12px; padding-bottom: 12px">
                 <div class="card bg-transparent px-4">
-                    <h4 class="py-2">PREMIUM PACKAGE</h4>
-                    <p class="py-3">Listen to all content without advertising</p>
+                    <h4 class="py-2 text-center">PREMIUM PACKAGE</h4>
+                    <p class="py-3 text-center">Listen to all content without advertising</p>
                     <div class="block d-flex align-items-center">
                         <p class="pe-2"><i class="ti-check text-success fs-3"></i></p>
                         <p>gratitude to vip customers.</p>
@@ -261,6 +268,101 @@
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </section> <!-- end of products -->
+
+<%--footer--%>
+<section class="footer bg-dark text-light">
+    <div class="container">
+        <div class="row" data-aos="fade-right">
+            <div class="col-lg-3 py-4 py-md-5">
+                <div class="d-flex align-items-center">
+                    <h4 class="">Group 4</h4>
+                </div>
+                <p class="py-3 para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque,
+                    deserunt doloremque doloribus et facere, illo ipsam iste molestiae, necessitatibus nobis nulla
+                    officia perspiciatis qui ratione similique suscipit vel voluptatem!</p>
+            </div> <!-- end of col -->
+
+            <div class="col-lg-3 py-4 py-md-5">
+                <div>
+                    <h4 class="py-2">Company</h4>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="ti-angle-right"></i>
+                        <a href="#about"><p class="ms-3">Introduce</p></a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="ti-angle-right"></i>
+                        <a href="#"><p class="ms-3">Job</p></a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="ti-angle-right"></i>
+                        <a href="#"><p class="ms-3">For the Record</p></a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="ti-angle-right"></i>
+                        <a href="#"><p class="ms-3">Contact</p></a>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+
+            <div class="col-lg-3 py-4 py-md-5">
+                <div>
+                    <h4 class="py-2">Community</h4>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="ti-angle-right"></i>
+                        <a href="#"><p class="ms-3">For Artists</p></a>
+
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="ti-angle-right"></i>
+                        <a href="#"><p class="ms-3">Developers</p></a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="ti-angle-right"></i>
+                        <a href="#"><p class="ms-3">
+                            Advertisement</p></a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="ti-angle-right"></i>
+                        <a href="#"><p class="ms-3">
+                            Investors</p></a>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="ti-angle-right"></i>
+                        <a href="#"><p class="ms-3">
+                            Supplier</p></a>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+
+            <div class="col-lg-3 py-4 py-md-5">
+                <div class="d-flex align-items-center">
+                    <h4>Newsletter</h4>
+                </div>
+                <p class="py-3 para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptatum?</p>
+                <div class="d-flex align-items-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control p-2" placeholder="Enter Email"
+                               aria-label="Recipient's email">
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of footer -->
+
+<!-- Bottom -->
+<div class="bg-dark text-light">
+    <div class="container d-flex justify-content-between">
+        <div><p class="my-0">&copy; Copyright by Group 4</p><br>
+            <p>Distributed by: <a href="#">C1022G1</a></p></div>
+        <div>
+            <i class="ti-youtube pe-2"></i>
+            <i class="ti-facebook pe-2"></i>
+            <i class="ti-instagram pe-2"></i>
+            <i class="ti-soundcloud pe-2"></i>
+        </div>
+    </div> <!-- end of container -->
+</div> <!-- end of bottom -->
 
 <script src="\js\bootstrap.js"></script>
 </body>
