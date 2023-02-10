@@ -10,33 +10,8 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .help {
-            width: 62px;
-            /*color: grey;*/
-        }
-
-        .navbar-nav > ul > li:hover > a {
-            color: white;
-        }
-
-        .register {
-            width: 70px;
-            box-shadow: 0 8px 16px 0 rgba(212, 208, 208, 0.59);
-        }
-
-        .column-menu {
-            background-color: #ffffff;
-            height: 35px;
-            width: 1px;
-            margin: 1px;
-        }
-    </style>
-    <title>$Title$</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Group 4</title>
 </head>
 <body>
 <!--header-->
@@ -69,7 +44,7 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-5 rounded-pill" type="search" placeholder="Search Music"
+                <input class="form-control me-5 rounded-pill " type="search" placeholder="Search Music"
                        aria-label="Search">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item me-4">
@@ -91,15 +66,21 @@
     </div>
 </nav>
 
-
 <!--main-->
 <div class="row">
     <div class="col-12">
         <img src="./Picture/guitar_wood_instrument_strings_music-1206457.jpg!d" height="760px" width="100%" alt="">
         <div class="row">
-            <div class="col-4"><h1>Welcome to Group 4</h1></div>
+            <div class="col-4 welcome-text text-dark-emphasis"><h1>Welcome to Group 4</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a class="watch-video text-white fs-1" href="#">Watch Video ></a>
+            </div>
         </div>
     </div>
 </div>
+
+
 </body>
 </html>
