@@ -75,7 +75,7 @@
         <div class="col-12">
             <div class="row">
                 <div class="col-12 pt-5 d-flex justify-content-center">
-                    <i class="ti-music-alt"></i>
+                    <i class="ti-music-alt" style="color: #40c140"></i>
                     <a class="navbar-brand me-4 text-dark fs-1 fw-bold" href="#">Group 4</a>
                 </div>
             </div>

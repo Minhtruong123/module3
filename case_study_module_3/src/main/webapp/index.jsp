@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="\themify-icons\themify-icons.css">
 <link rel="stylesheet" href="\style.css">
 <body>
+
+<%--header--%>
 <nav class="navbar navbar-expand-lg bg-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand ms-4" href="#">
