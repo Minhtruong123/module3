@@ -1,42 +1,48 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ACER
-  Date: 13/02/2023
-  Time: 4:45 CH
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Create Product</title>
+    <title>User Management Application</title>
 </head>
 <body>
-<form method="post">
-    <fieldset>
-        <legend>Product infomation</legend>
-        <table class="table">
+<center>
+    <h1>User Management</h1>
+    <h2>
+        <a href="users?action=users">List All Users</a>
+    </h2>
+</center>
+<div align="center">
+    <form method="post">
+        <table border="1" cellpadding="5">
+            <caption>
+                <h2>Add New User</h2>
+            </caption>
             <tr>
-                <td scope="row">Name Product</td>
-                <td><input type="text" name="name" id="name"></td>
+                <th>User Name:</th>
+                <td>
+                    <input type="text" name="name" id="name" size="45"/>
+                </td>
             </tr>
             <tr>
-                <td scope="row">Price Product</td>
-                <td><input type="text" name="price" id="price"></td>
+                <th>User Email:</th>
+                <td>
+                    <input type="text" name="email" id="email" size="45"/>
+                </td>
             </tr>
             <tr>
-                <td scope="row">Describe Product</td>
-                <td><input type="text" name="describe" id="describe"></td>
+                <th>Country:</th>
+                <td>
+                    <input type="text" name="country" id="country" size="15"/>
+                </td>
             </tr>
             <tr>
-                <td scope="row">Producer Product</td>
-                <td><input type="text" name="producer" id="producer"></td>
-            </tr>
-            <tr>
-                <td scope="row"></td>
-                <td><input name="update" id="update" class="btn btn-primary" type="submit" value="Update"></td>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Save"/>
+                </td>
             </tr>
         </table>
-    </fieldset>
-</form>
+    </form>
+</div>
 </body>
 </html>
