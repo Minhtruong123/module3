@@ -11,6 +11,13 @@
     <h2>
         <a href="/users?action=create">Add New User</a>
     </h2>
+    <form method="get">
+        <div class="form-group">
+            <label>Find by country</label>
+            <input type="text" name="country" id="country" class="form-control" placeholder="Country" aria-describedby="helpId">
+            <input name="" id="" class="btn btn-primary" type="submit" value="Find">
+        </div>
+    </form>
 </center>
 <div align="center">
     <table border="1" cellpadding="5">

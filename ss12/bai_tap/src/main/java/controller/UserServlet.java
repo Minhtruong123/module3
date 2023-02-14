@@ -61,12 +61,43 @@ public class UserServlet extends HttpServlet {
                 case "delete":
                     deleteUser(request, response);
                     break;
+                case "sort":
+                    sort(request,response);
+                    break;
+                case "find":
+                    find(request,response);
+                    break;
                 default:
                     listUser(request, response);
                     break;
             }
         } catch (SQLException ex) {
             throw new ServletException(ex);
+        }
+    }
+
+    private void find(HttpServletRequest request, HttpServletResponse response) {
+        String country = request.getParameter("country");
+        List<User> userList = userDAO.findByCountry(country);
+        request.setAttribute("listUser", userList);
+        try{
+            request.getRequestDispatcher("view/list.jsp").forward(request,response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void sort(HttpServletRequest request, HttpServletResponse response) {
+        List<User> userList = userDAO.sort();
+        request.setAttribute("listUser", userList);
+        try{
+            request.getRequestDispatcher("view/list.jsp").forward(request,response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
