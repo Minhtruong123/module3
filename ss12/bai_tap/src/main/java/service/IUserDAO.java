@@ -10,7 +10,7 @@ public interface IUserDAO {
 
     public User selectUser(int id);
 
-    public List<User> selectAllUsers();
+    public List<User> selectAllUsers(String country);
 
     public boolean deleteUser(int id) throws SQLException;
 
@@ -18,5 +18,5 @@ public interface IUserDAO {
 
     List<User> sort();
 
-    public List<User> findByCountry(String country);
+//    public List<User> findByCountry(String country);
 }

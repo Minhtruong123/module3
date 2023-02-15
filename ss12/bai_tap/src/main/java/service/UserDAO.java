@@ -17,7 +17,7 @@ public class UserDAO implements IUserDAO {
     private static final String DELETE_USERS_SQL = "delete from users where id = ?;";
     private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
     private static final String SORT_LIST = "select * from users order by name;";
-    private static final String FIND_BY_COUNTRY = "select * from users where country like ?;";
+    private static final String FIND_BY_COUNTRY = "select * from users where country like concat('%',?,'%');";
 
     public UserDAO() {
     }
@@ -75,26 +75,21 @@ public class UserDAO implements IUserDAO {
         return user;
     }
 
-    public List<User> selectAllUsers() {
-
-        // using try-with-resources to avoid closing resources (boiler plate code)
+    public List<User> selectAllUsers(String country) {
         List<User> users = new ArrayList<>();
-        // Step 1: Establishing a Connection
-        try (Connection connection = getConnection();
-
-             // Step 2:Create a statement using connection object
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
-            System.out.println(preparedStatement);
-            // Step 3: Execute the query or update query
-            ResultSet rs = preparedStatement.executeQuery();
-
-            // Step 4: Process the ResultSet object.
+        if (country == null) {
+            country = "";
+        }
+        try {
+            CallableStatement callableStatement = getConnection().prepareCall(FIND_BY_COUNTRY);
+            callableStatement.setString(1, country);
+            ResultSet rs = callableStatement.executeQuery();
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
                 String email = rs.getString("email");
-                String country = rs.getString("country");
-                users.add(new User(id, name, email, country));
+                String country1 = rs.getString("country");
+                users.add(new User(id, name, email, country1));
             }
         } catch (SQLException e) {
             printSQLException(e);
@@ -140,20 +135,21 @@ public class UserDAO implements IUserDAO {
         return userList;
     }
 
-    @Override
-    public List<User> findByCountry(String country) {
-        List<User> userList = new ArrayList<>();
-        Connection connection = getConnection();
-        try{
-            PreparedStatement preparedStatement = connection.prepareStatement(FIND_BY_COUNTRY);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()){
-                userList.add(new User(resultSet.getInt("id"), resultSet.getString("name"), resultSet.getString("email"), resultSet.getString("country")));
-            }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }return userList;
-    }
+//    @Override
+//    public List<User> findByCountry(String country) {
+//        List<User> userList = new ArrayList<>();
+//        Connection connection = getConnection();
+//        try {
+//            PreparedStatement preparedStatement = connection.prepareStatement(FIND_BY_COUNTRY);
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//            while (resultSet.next()) {
+//                userList.add(new User(resultSet.getInt("id"), resultSet.getString("name"), resultSet.getString("email"), resultSet.getString("country")));
+//            }
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//        return userList;
+//    }
 
     private void printSQLException(SQLException ex) {
         for (Throwable e : ex) {

@@ -64,28 +64,12 @@ public class UserServlet extends HttpServlet {
                 case "sort":
                     sort(request,response);
                     break;
-                case "find":
-                    find(request,response);
-                    break;
                 default:
                     listUser(request, response);
                     break;
             }
         } catch (SQLException ex) {
             throw new ServletException(ex);
-        }
-    }
-
-    private void find(HttpServletRequest request, HttpServletResponse response) {
-        String country = request.getParameter("country");
-        List<User> userList = userDAO.findByCountry(country);
-        request.setAttribute("listUser", userList);
-        try{
-            request.getRequestDispatcher("view/list.jsp").forward(request,response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
@@ -103,8 +87,8 @@ public class UserServlet extends HttpServlet {
 
     private void listUser(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
-        List<User> listUser = userDAO.selectAllUsers();
-        request.setAttribute("listUser", listUser);
+        String country = request.getParameter("country");
+        request.setAttribute("listUser", userDAO.selectAllUsers(country));
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/list.jsp");
         dispatcher.forward(request, response);
     }
@@ -154,7 +138,7 @@ public class UserServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         userDAO.deleteUser(id);
 
-        List<User> listUser = userDAO.selectAllUsers();
+        List<User> listUser = userDAO.selectAllUsers(null);
         request.setAttribute("listUser", listUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/list.jsp");
         dispatcher.forward(request, response);
