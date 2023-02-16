@@ -135,22 +135,6 @@ public class UserDAO implements IUserDAO {
         return userList;
     }
 
-//    @Override
-//    public List<User> findByCountry(String country) {
-//        List<User> userList = new ArrayList<>();
-//        Connection connection = getConnection();
-//        try {
-//            PreparedStatement preparedStatement = connection.prepareStatement(FIND_BY_COUNTRY);
-//            ResultSet resultSet = preparedStatement.executeQuery();
-//            while (resultSet.next()) {
-//                userList.add(new User(resultSet.getInt("id"), resultSet.getString("name"), resultSet.getString("email"), resultSet.getString("country")));
-//            }
-//        } catch (SQLException throwables) {
-//            throwables.printStackTrace();
-//        }
-//        return userList;
-//    }
-
     private void printSQLException(SQLException ex) {
         for (Throwable e : ex) {
             if (e instanceof SQLException) {
