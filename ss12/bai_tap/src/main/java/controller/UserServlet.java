@@ -1,8 +1,11 @@
 package controller;
 
 import model.User;
-import service.IUserDAO;
-import service.UserDAO;
+import repository.IUserRepository;
+import repository.UserRepository;
+import service.IUserService;
+import service.UserService;
+
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,10 +20,10 @@ import java.util.List;
 @WebServlet(name = "UserServlet", urlPatterns = "/users")
 public class UserServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private IUserDAO userDAO;
+    private IUserService userDAO;
 
     public void init() {
-        userDAO = new UserDAO();
+        userDAO = new UserService();
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

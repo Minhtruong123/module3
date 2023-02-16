@@ -20,14 +20,422 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07433800-f713-4043-926e-1d40e9ba3a1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/service/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/WEB-INF/classes/service/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_module_3/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_module_3/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_module_3/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_module_3/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_module_3/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_module_3/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_module_3/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_module_3/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_module_3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_module_3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_module_3/build/libs/case_study_module_3-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_module_3/build/libs/case_study_module_3-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_module_3/src/main/webapp/artist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_module_3/src/main/webapp/artist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/Picture/guitar_wood_instrument_strings_music-1206457.jpg!d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/Picture/icon_music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/Picture/tải_xuống-removebg-preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/artist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/Italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/agenda.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/alarm-clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/align-center.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/align-justify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/align-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/align-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/anchor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/android.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/angle-double-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/angle-double-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/angle-double-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/angle-double-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/angle-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/angle-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/angle-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/angle-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/announcement.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/apple.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/archive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-circle-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-circle-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-circle-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-circle-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-top-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-top-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrows-corner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrows-horizontal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/arrows-vertical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/back-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/back-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/bag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/bar-chart-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/bar-chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/basketball.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/bell.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/blackboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/bolt-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/bolt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/book.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/bookmark-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/bookmark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/briefcase.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/brush-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/brush.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/car.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/check-box.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/clip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/clipboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/cloud-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/cloud-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/comment-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/comment.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/comments-smiley.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/comments.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-backward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-eject.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-pause.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-play.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-record.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-shuffle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-skip-backward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-skip-forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/control-stop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/credit-card.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/crown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/css3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/cup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/cut.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/dashboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/desktop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/direction-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/direction.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/dribbble.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/dropbox-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/dropbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/drupal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/email.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/envelope.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/eraser.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/exchange-vertical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/export.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/eye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/face-sad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/face-smile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/files.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/filter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/flag-alt-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/flag-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/flag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/flickr-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/flickr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/folder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/fullscreen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/gallery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/game.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/gift.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/google.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/hand-drag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/hand-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/hand-point-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/hand-point-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/hand-point-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/hand-point-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/hand-stop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/harddrive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/harddrives.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/headphone-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/headphone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/heart-broken.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/help-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/help.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/html5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/hummer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/id-badge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/import.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/infinite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/info-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/info.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/ink-pen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/joomla.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/jsfiddle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/key.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layers-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layers.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-accordion-list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-accordion-merged.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-accordion-separated.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-column2-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-column2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-column3-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-column3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-column4-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-column4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-cta-btn-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-cta-btn-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-cta-center.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-cta-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-cta-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-grid2-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-grid2-thumb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-grid2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-grid3-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-grid3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-grid4-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-grid4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-line-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-list-large-image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-list-post.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-list-thumb-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-list-thumb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-media-center-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-media-center.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-media-left-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-media-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-media-overlay-alt-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-media-overlay-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-media-overlay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-media-right-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-media-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-menu-full.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-menu-separated.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-menu-v.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-placeholder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-sidebar-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-sidebar-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-sidebar-none.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-sidebar-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-slider-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-slider.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-tab-min.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-tab-v.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-tab-window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-width-default-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-width-default.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout-width-full.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/layout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/light-bulb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/line-dashed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/line-dotted.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/line-double.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/linux.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/list-ol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/location-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/location-pin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/lock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/loop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/magnet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/map-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/marker-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/marker.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/medall-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/medall.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/menu-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/microphone-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/microphone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/microsoft-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/microsoft.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/mobile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/money.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/more-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/more.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/mouse-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/mouse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/music-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/music.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/na.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/new-window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/notepad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/package.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/paint-bucket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/paint-roller.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/palette.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/panel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/paragraph.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pencil-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pencil-alt2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pencil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pie-chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pin-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pin2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pinterest-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pinterest.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/plug.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/power-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/printer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/pulse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/quote-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/quote-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/receipt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/reddit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/reload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/rocket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/rss-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/rss.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/ruler-alt-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/ruler-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/ruler-pencil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/ruler.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/save-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/save.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/server.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/settings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/share-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/share.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/sharethis-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/sharethis.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/shield.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/shift-left-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/shift-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/shift-right-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/shift-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/shine.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/shopping-cart-full.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/shopping-cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/shortcode.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/signal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/skype.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/slice.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/smallcap.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/soundcloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/split-h.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/split-v-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/split-v.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/spray.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/stack-overflow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/stamp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/stats-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/stats-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/support.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/tablet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/tag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/target.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/text.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/themify-favicon-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/themify-favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/themify-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/thought.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/thumb-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/thumb-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/timer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/trash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/trello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/truck.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/tumblr-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/tumblr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/twitter-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/underline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/unlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/unlock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/upload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/uppercase.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/vector.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/video-camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/video-clapper.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/view-grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/view-list-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/view-list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/vimeo-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/vimeo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/volume.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/wallet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/wand.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/wheelchair.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/widget-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/widget.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/widgetized.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/wordpress.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/world.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/write.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/yahoo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/zip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/zoom-in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/SVG/zoom-out.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/Themify IconFonts 5-23-2014.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/demo-files/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/fonts/themify.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/fonts/themify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/fonts/themify.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/fonts/themify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/ie7/ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/ie7/ie7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.71/apache-tomcat-9.0.71/webapps/ROOT/themify-icons/themify-icons.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -36,9 +444,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/service/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/IUserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/UserDAO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/bai_1-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/bai_1-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +505,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../case_study_module_3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -192,6 +604,7 @@
       <workItem from="1676393990120" duration="3357000" />
       <workItem from="1676430671114" duration="3421000" />
       <workItem from="1676446768952" duration="1450000" />
+      <workItem from="1676538576131" duration="495000" />
     </task>
     <servers />
   </component>
@@ -215,66 +628,70 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1676365632611" />
-    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1676395795406">
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1676538938831">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1676395795406" />
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1676538938831" />
     <state x="499" y="47" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1676361869270">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="499" y="47" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.816@0.0.1536.816" timestamp="1676361869270" />
+    <state x="110" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1676538776413">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="110" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.816@0.0.1536.816" timestamp="1676538776413" />
     <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1676448637268">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1676448637268" />
-    <state width="1024" height="228" key="GridCell.Tab.0.bottom" timestamp="1676448638603">
+    <state width="1024" height="235" key="GridCell.Tab.0.bottom" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1676448638603" />
-    <state width="1024" height="228" key="GridCell.Tab.0.center" timestamp="1676448638603">
+    <state width="1024" height="235" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.0.center" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1676448638603" />
-    <state width="1024" height="228" key="GridCell.Tab.0.left" timestamp="1676448638603">
+    <state width="1024" height="235" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.0.left" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1676448638603" />
-    <state width="1024" height="228" key="GridCell.Tab.0.right" timestamp="1676448638603">
+    <state width="1024" height="235" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.0.right" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1676448638603" />
-    <state width="1024" height="228" key="GridCell.Tab.1.bottom" timestamp="1676448638603">
+    <state width="1024" height="235" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.1.bottom" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1676448638603" />
-    <state width="1024" height="228" key="GridCell.Tab.1.center" timestamp="1676448638603">
+    <state width="1024" height="235" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.1.center" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1676448638603" />
-    <state width="1024" height="228" key="GridCell.Tab.1.left" timestamp="1676448638603">
+    <state width="1024" height="235" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.1.left" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1676448638603" />
-    <state width="1024" height="228" key="GridCell.Tab.1.right" timestamp="1676448638603">
+    <state width="1024" height="235" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.1.right" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1676448638603" />
-    <state width="1024" height="228" key="GridCell.Tab.2.bottom" timestamp="1676448638604">
+    <state width="1024" height="235" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.2.bottom" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.2.bottom/0.0.1536.816@0.0.1536.816" timestamp="1676448638604" />
-    <state width="1024" height="228" key="GridCell.Tab.2.center" timestamp="1676448638604">
+    <state width="1024" height="235" key="GridCell.Tab.2.bottom/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.2.center" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.2.center/0.0.1536.816@0.0.1536.816" timestamp="1676448638604" />
-    <state width="1024" height="228" key="GridCell.Tab.2.left" timestamp="1676448638604">
+    <state width="1024" height="235" key="GridCell.Tab.2.center/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.2.left" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.2.left/0.0.1536.816@0.0.1536.816" timestamp="1676448638604" />
-    <state width="1024" height="228" key="GridCell.Tab.2.right" timestamp="1676448638604">
+    <state width="1024" height="235" key="GridCell.Tab.2.left/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
+    <state width="1024" height="235" key="GridCell.Tab.2.right" timestamp="1676538848094">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1024" height="228" key="GridCell.Tab.2.right/0.0.1536.816@0.0.1536.816" timestamp="1676448638604" />
+    <state width="1024" height="235" key="GridCell.Tab.2.right/0.0.1536.816@0.0.1536.816" timestamp="1676538848094" />
     <state width="1024" height="228" key="GridCell.Tab.3.bottom" timestamp="1676448638604">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -308,9 +725,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/service/UserDAO.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/repository/UserRepository.java</url>
           <line>77</line>
-          <properties class="service.UserDAO" method="selectAllUsers">
+          <properties class="repository.UserRepository" method="selectAllUsers">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
